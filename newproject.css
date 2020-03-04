@@ -1,0 +1,88 @@
+body {margin: 0;
+padding: 0;}
+/*Navbar*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+nav {font-family: 'Montserrat' , sans-serif;
+    background-color: #cc0e18;
+    height: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+justify-content: flex-end;
+position: fixed;
+width: 100%;}
+
+.logo {margin-right: auto;
+padding-left: 3rem;
+margin-top: 0.5rem;
+color: antiquewhite;}
+.nav-ul {list-style: none;
+    display: flex;
+    padding-right: 1rem;
+}
+.navlink:hover{background-color: black;}
+.navlink{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: antiquewhite;
+    padding-right: 0.5rem;
+    border-right: 1px solid antiquewhite;
+}
+.navlink:hover {color: aquamarine;
+transition: 0.5, ease;}
+.search-button {border-radius: 6%;
+    height: 73%;
+margin-top: auto;
+margin-bottom: 2px;
+margin-right: 0.5rem;
+background-color: antiquewhite;
+cursor: pointer;
+}
+.search-button:hover{background-color: black;}
+.searchfield {border-radius: 3%;
+margin-right: 0.2rem;
+height: 60%;
+margin-top: auto;
+margin-bottom: 2px;
+background-color: antiquewhite;
+font-size: 16px;
+text-align: center;
+width: 8rem;
+cursor: text;}
+.toggle {display:none;}
+
+/*Media querys for nav-bar*/
+@media only screen and (max-width: 595px){
+  .logo{margin-left: 0;
+padding-left: 0;}
+.toggle{display: inline;}
+#icon{width: 31px;
+height: auto;
+position: absolute;
+right: 12rem;
+top:0.5rem;}
+#icon:hover{background-color: lightcoral;}
+.nav-ul{display: inline;
+    width: 100%;
+margin-top: 3rem;
+margin-left: 2rem;}
+.navlink{color: antiquewhite;
+border: none;
+font-size: 20px;
+padding-bottom: 10px;}
+.navlink:hover{background-color: black;}
+#menu-options{position: absolute;
+    top: 2.6rem;
+right: 12rem;
+    background-color: #cc0e18;
+width: 6rem;
+display: none;
+}
+}
+@media only screen and (max-width: 340px){
+    .searchfield {width:4rem;}
+    #icon{right: 8rem;}
+    #icon:hover{background-color: lightblue;}
+}
+/*Media querys for nav-bar*/
