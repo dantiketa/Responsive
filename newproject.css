@@ -1,5 +1,6 @@
 body {margin: 0;
-padding: 0;}
+padding: 0;
+}
 /*Navbar*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
@@ -10,7 +11,8 @@ nav {font-family: 'Montserrat' , sans-serif;
     display: flex;
 justify-content: flex-end;
 position: fixed;
-width: 100%;}
+width: 100%;
+top: 0;}
 
 .logo {margin-right: auto;
 padding-left: 3rem;
@@ -63,20 +65,16 @@ position: absolute;
 right: 12rem;
 top:0.5rem;}
 #icon:hover{background-color: lightcoral;}
-.nav-ul{display: inline;
-    width: 100%;
-margin-top: 3rem;
-margin-left: 2rem;}
 .navlink{color: antiquewhite;
-border: none;
-font-size: 20px;
-padding-bottom: 10px;}
+font-size: 18px;
+margin-bottom: auto;
+}
 .navlink:hover{background-color: black;}
 #menu-options{position: absolute;
-    top: 2.6rem;
-right: 12rem;
+    top: 2.55rem;
     background-color: #cc0e18;
-width: 6rem;
+width: 100%;
+height: 2.3rem;
 display: none;
 }
 }
@@ -86,3 +84,27 @@ display: none;
     #icon:hover{background-color: lightblue;}
 }
 /*Media querys for nav-bar*/
+
+/*Page header*/
+.page-header {margin-top: 2.53rem;
+font-family: "Montserrat", sans-serif;
+text-align: center;
+background-color: #615352;
+box-sizing: border-box;
+}
+.header-h1 {
+display: inline;
+font-size: 4rem;
+color: antiquewhite;
+}
+.header-h2 {
+font-size: 2rem;
+color: antiquewhite;
+margin-top: 0;}
+/*Page header*/
+
+/*Media Querys for Page Header*/
+@media only screen and (max-width: 340px){
+    .header-h2{display: none;}
+}
+/*Media Querys for Page Header*/
